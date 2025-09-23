@@ -19,6 +19,8 @@ table{
 }
 a {
     color: black;
-    text-decoration: none;
-    
+    text-decoration: none;    
+}
+.intro {
+    color: #0088ff
 }
