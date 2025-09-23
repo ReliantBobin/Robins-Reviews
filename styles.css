@@ -1,0 +1,24 @@
+body {
+    background-color:#417362;
+    text-align: center;
+}
+h1{
+    color: #ff8c00;
+    text-decoration: underline;
+    font-weight: bold;
+}
+p {
+    color: antiquewhite
+}
+tr {
+    color: darkorange;
+    align-content: center;
+}
+table{
+    box-align: center;position: absolute
+}
+a {
+    color: black;
+    text-decoration: none;
+    
+}
