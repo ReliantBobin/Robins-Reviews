@@ -1,9 +1,15 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #417362;
+    background-color: darkcyan;
     text-align: center;
 }
 h1 {
-    color: #ff8c00;
+    color: #f5f5f5;
     text-decoration: underline;
     font-weight: bold;
     font-family: Righteous, Arial, Helvetica, sans-serif;
@@ -17,7 +23,6 @@ tr {
     align-content: center;
 }
 table {
-    box-align: center;
     position: absolute;
     font-family: Ubuntu, Arial, Helvetica, sans-serif;
 }
@@ -27,5 +32,25 @@ a {
 }
 .intro {
     color: #0088ff;
+    background-color: darkslategray;
+    
+    border-width: 5px;
+    border-style: solid;
+    border-color: #026969;
+    border-radius: 8px;
+    
+    padding: 10px;
+    margin: 10px
 }
 
+.banner {
+    background-color: darkslategray;
+    
+    border-width: 5px;
+    border-style: solid;
+    border-color: #026969;
+    border-radius: 8px;
+    
+    padding: 10px;
+    
+}
