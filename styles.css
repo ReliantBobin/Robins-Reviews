@@ -33,24 +33,50 @@ a {
 .intro {
     color: #0088ff;
     background-color: darkslategray;
-    
+
     border-width: 5px;
     border-style: solid;
     border-color: #026969;
     border-radius: 8px;
-    
+
     padding: 10px;
-    margin: 10px
+    margin: 10px;
 }
 
 .banner {
     background-color: darkslategray;
-    
+
     border-width: 5px;
     border-style: solid;
     border-color: #026969;
-    border-radius: 8px;
-    
+    border-radius: -1px;
+
     padding: 10px;
-    
+}
+
+ul.topnav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #026969;
+    font-family: Ubuntu, Arial, Helvetica, sans-serif;
+}
+
+ul.topnav li a {
+    display: block;
+    color: #ffffff;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover {
+    background-color: darkslategray;
+    color: darkorange;
+}
+
+.centered-content {
+    max-width: 737px;
+    margin-left: auto;
+    margin-right: auto;
 }
