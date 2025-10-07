@@ -70,7 +70,6 @@ ul.topnav li a {
     display: block;
     color: #ffffff;
     padding: 14px 16px;
-    text-decoration: none;
 }
 
 ul.topnav li a:hover {
@@ -83,4 +82,64 @@ ul.topnav li a:hover {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
+}
+
+.review-card {
+    color: #0088ff;
+    background-color: darkslategray;
+
+    border-width: 10px;
+    border-style: solid;
+    border-color: #026969;
+    border-radius: 10px;
+
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+
+    width: 500px;
+}
+
+.card-img .card-link {
+    color: #ffffff;
+}
+
+.navbar {
+    text-align: center;
+    width: 100%;
+}
+
+.navbutton {
+    background-color: #026969;
+    border: 2px dashed darkslategray;
+    display: inline-block;
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    font-family: Ubuntu, Arial, Helvetica, sans-serif;
+}
+
+/* defualt - mobile/phone */
+.navbutton {
+    width: 100%;
+    margin: -2px;
+}
+
+/* tablet and up */
+@media (min-width: 830px) {
+    .navbutton {
+        display: inline-block;
+        width: 25%;
+        margin: -4px;
+    }
+}
+
+/* large desktop */
+@media (min-width: 1200px) {
+    .navbutton {
+        display: inline-block;
+        width: 150px;
+        margin: 10px;
+        padding: 10px;
+    }
 }
