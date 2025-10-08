@@ -27,7 +27,6 @@ table {
     font-family: Ubuntu, Arial, Helvetica, sans-serif;
 }
 .intro {
-    color: #0088ff;
     background-color: darkslategray;
 
     border-width: 5px;
@@ -48,28 +47,6 @@ table {
     border-top-right-radius: 20px;
 
     padding: 10px;
-}
-
-ul.topnav {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #026969;
-    font-family: Ubuntu, Arial, Helvetica, sans-serif;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-ul.topnav li a {
-    display: block;
-    color: #ffffff;
-    padding: 14px 16px;
-}
-
-ul.topnav li a:hover {
-    background-color: darkslategray;
-    color: darkorange;
 }
 
 .centered-content {
@@ -103,22 +80,16 @@ ul.topnav li a:hover {
     text-align: center;
     width: 100%;
 }
-
 .navbutton {
-    background-color: #026969;
-    display: block;
-    width: 150px;
-    margin: 25px;
-    padding: 10px;
     font-family: Ubuntu, Arial, Helvetica, sans-serif;
-    color: #ffffff;
-    text-decoration: none;
+    background-color: darkslategray;
 }
 .navbar a:hover {
     background-color: #026969;
     color: darkorange;
     padding: 8px;
 }
+
 
 a {
     color: #ffffff;
@@ -129,27 +100,39 @@ a {
 .navbutton {
     width: 100%;
     margin: 0px;
-    background-color: darkslategray;
-    border: solid #026969;
+    border: solid 8px #026969;
+    padding: 10px;
 }
 
 /* tablet and up */
 @media (min-width: 830px) {
     .navbutton {
-        display: flex;
-        list-style-type: none;
-        
-        background-color: #026969;
-        
+        display: inline-block;
+        width: 32.1%;
+        margin: 5px;
+        padding: 8px;
+        border: solid 6px #026969;
+        border-radius: 10px;
     }
 }
 
 /* large desktop */
 @media (min-width: 1200px) {
+    .navbar {
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #026969;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .navbar a {
+        display: block;
+        padding: 8px 8px;
+    }
     .navbutton {
-        display: flex;
-        width: 150px;
-        margin: 10px;
-        padding: 10px;
+        background-color: darkslategray;
+        border-radius: 10px;
     }
 }
