@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: darkcyan;
+    background-color: #008a8a;
     text-align: center;
 }
 h1 {
@@ -26,10 +26,6 @@ table {
     position: absolute;
     font-family: Ubuntu, Arial, Helvetica, sans-serif;
 }
-a {
-    color: black;
-    text-decoration: none;
-}
 .intro {
     color: #0088ff;
     background-color: darkslategray;
@@ -42,7 +38,6 @@ a {
     padding: 10px;
     margin: 10px;
 }
-
 .banner {
     background-color: darkslategray;
 
@@ -111,33 +106,48 @@ ul.topnav li a:hover {
 
 .navbutton {
     background-color: #026969;
-    border: 2px dashed darkslategray;
-    display: inline-block;
+    display: block;
     width: 150px;
-    margin: 10px;
+    margin: 25px;
     padding: 10px;
     font-family: Ubuntu, Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: #026969;
+    color: darkorange;
+    padding: 8px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 /* defualt - mobile/phone */
 .navbutton {
     width: 100%;
-    margin: -2px;
+    margin: 0px;
+    background-color: darkslategray;
+    border: solid #026969;
 }
 
 /* tablet and up */
 @media (min-width: 830px) {
     .navbutton {
-        display: inline-block;
-        width: 25%;
-        margin: -4px;
+        display: flex;
+        list-style-type: none;
+        
+        background-color: #026969;
+        
     }
 }
 
 /* large desktop */
 @media (min-width: 1200px) {
     .navbutton {
-        display: inline-block;
+        display: flex;
         width: 150px;
         margin: 10px;
         padding: 10px;
