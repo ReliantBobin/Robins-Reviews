@@ -67,29 +67,26 @@ table {
 }
 
 .review-card {
-    color: #0088ff;
-    background-color: #000000;
+    color: #ffffff;
 
     border: solid 6px #026969;
     border-radius: 50px;
 
+    margin: 10%;
+    padding: 100px;
+    
+    order: 2;
+}
+
+.review-card img {
     padding: 0px;
-    margin: 100px;
-    margin-top: 50px;
+    margin: 0px;
+    width: 350px;
+    display: flexbox;
 }
-
-.review-card a {
-    color: white;
+.review-card-info {
+    display: ;
 }
-
-.card-img {
-    float: left;
-}
-
-.card-link {
-    color: #ffffff;
-}
-
 /* defualt - mobile/phone */
 .navbar {
     display: inline-flex;
@@ -111,71 +108,51 @@ table {
     height: 50px;
 
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
 }
 
 /* tablet and up */
 @media (min-width: 830px) {
     .navbar {
-        display: inline-flex;
-        list-style-type: none;
-        
         border: solid 6px #026969;
         border-radius: 50px;
-        
+
         width: 100%;
     }
-    .navbar a {
-        
-    }
     .navbutton {
-        border: solid 19px #026969;
-        border-radius: 50px;
+        border: none;
 
-    }
-    .navbutton {
-        border: solid 6px #026969;
-        border-radius: 50px;
+        padding: 15px;
 
-        width: 150px;
-        height: 50px;
-
-        padding: 10px;
-        margin: 10px;
-    }
-    .navbar {
-        display: inline-flex;
-        list-style-type: none;
-
-        border: solid 6px #026969;
-        border-radius: 50px;
         width: 100%;
-    }
-    .navbar a {
-        color: #ffffff;
-        text-decoration: none;
-        text-align: center;
-        font-weight: 600;
     }
 }
 
 /* large desktop */
 @media (min-width: 1200px) {
+    h1 {
+        font-size: 125px;
+    }
+
     .navbar {
-        display: block;
-        list-style-type: none;
+        display: flex;
+
         margin: 0;
         padding: 0;
-        background-color: #026969;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
     }
     .navbar a {
         display: block;
-        padding: 8px 8px;
+        padding: 0;
     }
     .navbutton {
-        background-color: darkslategray;
-        border-radius: 10px;
+        width: 150px;
+        height: 20px;
+
+        padding: 0px;
+        margin: 20px;
     }
+}
+
+.form {
+    color: white;
 }
