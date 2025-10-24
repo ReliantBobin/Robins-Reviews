@@ -5,17 +5,19 @@
 }
 
 body {
-    background-color: #008a8a;
+    background-color: #000000;
     text-align: center;
+    margin: 0px;
 }
 h1 {
-    color: #f5f5f5;
-    text-decoration: underline;
+    color: #ffffff;
+    text-decoration: none;
     font-weight: bold;
     font-family: Righteous, Arial, Helvetica, sans-serif;
+    font-size: 75px;
+    margin: 0px;
 }
 p {
-    color: antiquewhite;
     font-family: Ubuntu, Arial, Helvetica, sans-serif;
 }
 tr {
@@ -27,26 +29,34 @@ table {
     font-family: Ubuntu, Arial, Helvetica, sans-serif;
 }
 .intro {
-    background-color: darkslategray;
+    color: #ffffff;
 
-    border-width: 5px;
-    border-style: solid;
-    border-color: #026969;
-    border-radius: 8px;
+    border: solid 6px #026969;
+    border-radius: 50px;
 
-    padding: 10px;
-    margin: 10px;
+    padding: 46px;
+    margin: auto;
 }
-.banner {
-    background-color: darkslategray;
-
-    border-width: 5px;
-    border-style: solid;
-    border-color: #026969;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-
-    padding: 10px;
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px 0 25px;
+    align-items: center;
+}
+.gallery-item {
+    position: relative;
+    width: calc(28% - 0px);
+    height: auto;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+.gallery-item:hover {
+    transform: scale(1.1);
+}
+.gallery a {
+    display: contents;
 }
 
 .centered-content {
@@ -58,61 +68,94 @@ table {
 
 .review-card {
     color: #0088ff;
-    background-color: darkslategray;
+    background-color: #000000;
 
-    border-width: 10px;
-    border-style: solid;
-    border-color: #026969;
-    border-radius: 10px;
+    border: solid 6px #026969;
+    border-radius: 50px;
 
-    padding: 10px;
-    margin: auto;
-    margin-top: 10px;
-
-    width: 500px;
+    padding: 0px;
+    margin: 100px;
+    margin-top: 50px;
 }
 
-.card-img .card-link {
+.review-card a {
+    color: white;
+}
+
+.card-img {
+    float: left;
+}
+
+.card-link {
     color: #ffffff;
-}
-
-.navbar {
-    text-align: center;
-    width: 100%;
-}
-.navbutton {
-    font-family: Ubuntu, Arial, Helvetica, sans-serif;
-    background-color: darkslategray;
-}
-.navbar a:hover {
-    background-color: #026969;
-    color: darkorange;
-    padding: 8px;
-}
-
-
-a {
-    color: #ffffff;
-    text-decoration: none;
 }
 
 /* defualt - mobile/phone */
+.navbar {
+    display: inline-flex;
+    list-style-type: none;
+}
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+}
 .navbutton {
-    width: 100%;
-    margin: 0px;
-    border: solid 8px #026969;
+    font-family: Ubuntu, Arial, Helvetica, sans-serif;
+
+    border: solid 6px #026969;
+    border-radius: 50px;
+
+    width: 150px;
+    height: 50px;
+
     padding: 10px;
+    margin: 10px;
 }
 
 /* tablet and up */
 @media (min-width: 830px) {
-    .navbutton {
-        display: inline-block;
-        width: 32.1%;
-        margin: 5px;
-        padding: 8px;
+    .navbar {
+        display: inline-flex;
+        list-style-type: none;
+        
         border: solid 6px #026969;
-        border-radius: 10px;
+        border-radius: 50px;
+        
+        width: 100%;
+    }
+    .navbar a {
+        
+    }
+    .navbutton {
+        border: solid 19px #026969;
+        border-radius: 50px;
+
+    }
+    .navbutton {
+        border: solid 6px #026969;
+        border-radius: 50px;
+
+        width: 150px;
+        height: 50px;
+
+        padding: 10px;
+        margin: 10px;
+    }
+    .navbar {
+        display: inline-flex;
+        list-style-type: none;
+
+        border: solid 6px #026969;
+        border-radius: 50px;
+        width: 100%;
+    }
+    .navbar a {
+        color: #ffffff;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 600;
     }
 }
 
