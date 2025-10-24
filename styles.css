@@ -84,9 +84,7 @@ table {
     width: 350px;
     display: flexbox;
 }
-.review-card-info {
-    display: ;
-}
+
 /* defualt - mobile/phone */
 .navbar {
     display: inline-flex;
