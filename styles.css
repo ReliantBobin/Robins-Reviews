@@ -35,7 +35,7 @@ table {
     border-radius: 50px;
 
     padding: 46px;
-    margin: auto;
+    margin: 10%;
 }
 .gallery {
     display: flex;
@@ -73,16 +73,19 @@ table {
     border-radius: 50px;
 
     margin: 10%;
-    padding: 100px;
-    
-    order: 2;
+    padding: 25px;
 }
 
 .review-card img {
-    padding: 0px;
-    margin: 0px;
-    width: 350px;
-    display: flexbox;
+    width: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+
+h3{
+    font-family: Righteous, Arial, Helvetica, sans-serif;
 }
 
 /* defualt - mobile/phone */
