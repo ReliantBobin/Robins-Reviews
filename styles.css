@@ -14,7 +14,7 @@ h1 {
     text-decoration: none;
     font-weight: bold;
     font-family: Righteous, Arial, Helvetica, sans-serif;
-    font-size: 75px;
+    font-size: 35px;
     margin: 0px;
 }
 p {
@@ -60,7 +60,7 @@ table {
 }
 
 .centered-content {
-    max-width: 737px;
+    max-width: 772px;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -89,6 +89,8 @@ table {
 .navbar {
     display: inline-flex;
     list-style-type: none;
+    
+    
 }
 .navbar a {
     color: #ffffff;
@@ -102,11 +104,14 @@ table {
     border: solid 6px #026969;
     border-radius: 50px;
 
-    width: 150px;
+    
     height: 50px;
 
     padding: 10px;
-    margin: 20px;
+    margin: 0px;
+    
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* tablet and up */
@@ -116,11 +121,13 @@ table {
         border-radius: 50px;
 
         width: 100%;
+        
     }
     .navbutton {
         border: none;
 
         padding: 15px;
+        
 
         width: 100%;
     }
