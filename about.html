@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0" />
         <title>About Me</title>
         <link rel="stylesheet" href="styles.css" />
         <!--- Google font --->
@@ -21,13 +21,14 @@
         </div>
 
         <div class="navbar">
-            <div class="navbutton"> <a href="index.html">Home</a></div>
-            <div class="navbutton"> <a href="reviews.html">Reviews</a></div>
-            <div class="navbutton"> <a href="about.html">About</a></div>
+            <div class="navbutton"><a href="index.html">Home</a></div>
+            <div class="navbutton"><a href="reviews.html">Reviews</a></div>
+            <div class="navbutton"><a href="about.html">About</a></div>
         </div>
-        
+
         <div class="centered-content">
             <div class="intro">
+                <h2>About me</h2>
                 <p>
                     Okay, so hello there! My name is Robin, I am currently working my way through a Level 7 HNC: Digital
                     Design and Development (Games) course at Fife College. If I find the effort to complete this course,
@@ -46,16 +47,16 @@
                     Feel free to drop a quick comment below, maybe suggesting something I should change on the website
                     or a game I should try playing.
                 </p>
+                <form class="form">
+                    <label for="username">Email:</label>
+                    <input type="text" id="Email" />
+                    <br />
+                    <label for="username">Comment:</label>
+                    <textarea id="bigtext" rows="4" cols="50"></textarea>
+                    <br />
+                    <input type="submit" value="Submit" />
+                </form>
             </div>
         </div>
-        <form class="form">
-            <label for="username">Email:</label>
-            <input type="text" id="Email" />
-            <br />
-            <label for="username">Comment:</label>
-            <textarea id="bigtext" rows="4" cols="50"></textarea>
-            <br />
-            <input type="submit" value="Submit" />
-        </form>
     </body>
 </html>

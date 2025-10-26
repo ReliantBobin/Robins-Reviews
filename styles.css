@@ -6,15 +6,20 @@
 
 body {
     background-color: #000000;
+
     text-align: center;
+
     margin: 0px;
 }
 h1 {
     color: #ffffff;
+
     text-decoration: none;
+
     font-weight: bold;
     font-family: Righteous, Arial, Helvetica, sans-serif;
-    font-size: 35px;
+    font-size: 50px;
+
     margin: 0px;
 }
 p {
@@ -26,6 +31,7 @@ tr {
 }
 table {
     position: absolute;
+
     font-family: Ubuntu, Arial, Helvetica, sans-serif;
 }
 .intro {
@@ -37,20 +43,49 @@ table {
     padding: 46px;
     margin: 10%;
 }
+
+.review {
+    color: #ffffff;
+
+    border: solid 6px #026969;
+    border-radius: 50px;
+
+    padding: 46px;
+    margin: 10%;
+    
+    align-content: center;
+}
+
+.game-banner {
+    height: 11%;
+}
+
+h2 {
+    font-family: Righteous, Arial, Helvetica, sans-serif;
+}
 .gallery {
     display: flex;
     flex-wrap: wrap;
+
     justify-content: center;
+
     padding: 25px 0 25px;
+
     align-items: center;
 }
 .gallery-item {
     position: relative;
+
     width: calc(28% - 0px);
     height: auto;
+
     margin: auto;
+
     cursor: pointer;
+
     transition: transform 0.5s ease;
+
+    border-radius: 10px;
 }
 .gallery-item:hover {
     transform: scale(1.1);
@@ -60,9 +95,12 @@ table {
 }
 
 .centered-content {
-    max-width: 772px;
+    max-width: 1000px;
+    min-width: 75%;
+
     margin-left: auto;
     margin-right: auto;
+
     text-align: left;
 }
 
@@ -74,32 +112,50 @@ table {
 
     margin: 10%;
     padding: 25px;
+
+    align-content: center;
 }
 
 .review-card img {
     width: 100%;
+
     display: flex;
+
     margin-left: auto;
     margin-right: auto;
+
     border-radius: 50px;
+
+    cursor: pointer;
 }
 
-h3{
+h3 {
     font-family: Righteous, Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.form {
+    color: white;
+    text-align: center;
+}
+
+iframe{
+    margin: 10px;
 }
 
 /* defualt - mobile/phone */
 .navbar {
     display: inline-flex;
     list-style-type: none;
-    
-    
 }
 .navbar a {
     color: #ffffff;
+
     text-decoration: none;
     text-align: center;
-    font-weight: 600;
+    font-weight: bold;
 }
 .navbutton {
     font-family: Ubuntu, Arial, Helvetica, sans-serif;
@@ -107,14 +163,10 @@ h3{
     border: solid 6px #026969;
     border-radius: 50px;
 
-    
     height: 50px;
 
     padding: 10px;
-    margin: 0px;
-    
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10px;
 }
 
 /* tablet and up */
@@ -124,16 +176,28 @@ h3{
         border-radius: 50px;
 
         width: 100%;
-        
     }
     .navbutton {
         border: none;
 
         padding: 15px;
-        
 
         width: 100%;
     }
+    .review-card {
+        margin: 10%;
+        padding: 50px;
+        text-align: left;
+    }
+    .review-card-info {
+        
+    }
+    .review-card img {
+        width: 60%;
+        float: left;
+        margin: 25px;
+    }
+    
 }
 
 /* large desktop */
@@ -159,8 +223,23 @@ h3{
         padding: 0px;
         margin: 20px;
     }
-}
+    .review-card {
+        
+        text-align: center;
+        align-content: center;
+        
+    }
+    .review-card-info {
+    }
 
-.form {
-    color: white;
+    .review-card img {
+        width: 100%;
+        
+        margin: 0px;
+        
+        float: none;
+    }
+    h3 {
+        font-size: xx-large
+    }
 }
