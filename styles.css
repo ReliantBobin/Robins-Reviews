@@ -60,6 +60,13 @@ td {
     margin: 10%;
 
     align-content: center;
+    
+    overflow: hidden;
+}
+iframe {
+    display: flex;  
+    
+    margin: auto;
 }
 .game-banner {
     margin: 10px;
@@ -160,15 +167,11 @@ h4 {
 }
 
 .form {
-    color: white;
-    
-    text-align: center;
-}
-
-iframe {
-    display: flex;
+    color: #ffffff;
     
     margin: auto;
+    padding: 10px;
+    text-align: center;
 }
 
 /* defualt - mobile/phone */
@@ -269,11 +272,8 @@ iframe {
     .review-card {
         text-align: center;
         align-content: center;
-        padding: 0px;
+        padding: 25px;
     }
-    .review-card-info {
-    }
-
     .review-card img {
         width: 100%;
 
@@ -284,7 +284,6 @@ iframe {
     .game-banner {
         margin: 50px;
     }
-
     .game-banner img {
         max-width: 800px;
         border-radius: 50px;
