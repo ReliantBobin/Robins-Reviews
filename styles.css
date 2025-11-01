@@ -26,8 +26,9 @@ p {
     font-family: Ubuntu, Arial, Helvetica, sans-serif;
 }
 tr {
-    color: darkorange;
-    align-content: center;
+    color: #ffffff;
+    margin: auto;
+    border: 20px white solid;
 }
 table {
     position: absolute;
@@ -42,6 +43,8 @@ table {
 
     padding: 46px;
     margin: 10%;
+
+    align-content: center;
 }
 
 .review {
@@ -52,12 +55,18 @@ table {
 
     padding: 46px;
     margin: 10%;
-    
+
     align-content: center;
 }
+.game-banner{
+    margin: 10px;
+}
 
-.game-banner {
-    height: 11%;
+.game-banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    
 }
 
 h2 {
@@ -102,6 +111,8 @@ h2 {
     margin-right: auto;
 
     text-align: left;
+
+    align-content: center;
 }
 
 .review-card {
@@ -141,8 +152,9 @@ h3 {
     text-align: center;
 }
 
-iframe{
-    margin: 10px;
+iframe {
+    display: block;
+    margin: auto;
 }
 
 /* defualt - mobile/phone */
@@ -190,14 +202,12 @@ iframe{
         text-align: left;
     }
     .review-card-info {
-        
     }
     .review-card img {
         width: 60%;
         float: left;
         margin: 25px;
     }
-    
 }
 
 /* large desktop */
@@ -224,22 +234,20 @@ iframe{
         margin: 20px;
     }
     .review-card {
-        
         text-align: center;
         align-content: center;
-        
     }
     .review-card-info {
     }
 
     .review-card img {
         width: 100%;
-        
+
         margin: 0px;
-        
+
         float: none;
     }
     h3 {
-        font-size: xx-large
+        font-size: xx-large;
     }
 }
