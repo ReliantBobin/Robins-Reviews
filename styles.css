@@ -25,15 +25,18 @@ h1 {
 p {
     font-family: Ubuntu, Arial, Helvetica, sans-serif;
 }
-tr {
-    color: #ffffff;
-    margin: auto;
-    border: 20px white solid;
-}
 table {
-    position: absolute;
-
+    margin: auto;
+}
+tr,
+th,
+td {
     font-family: Ubuntu, Arial, Helvetica, sans-serif;
+
+    border: 3px solid #026969;
+    border-radius: 10px;
+
+    padding: 5px;
 }
 .intro {
     color: #ffffff;
@@ -58,19 +61,26 @@ table {
 
     align-content: center;
 }
-.game-banner{
+.game-banner {
     margin: 10px;
 }
 
 .game-banner img {
     width: 100%;
     height: auto;
-    border-radius: 50px;
     
+    border-radius: 50px;
 }
 
 h2 {
     font-family: Righteous, Arial, Helvetica, sans-serif;
+}
+h3 {
+    font-family: Righteous, Arial, Helvetica, sans-serif;
+}
+h4 {
+    font-family: Righteous, Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 .gallery {
     display: flex;
@@ -140,20 +150,24 @@ h2 {
     cursor: pointer;
 }
 
-h3 {
+.review-card-info h2 {
     font-family: Righteous, Arial, Helvetica, sans-serif;
     text-decoration: underline;
+    
     cursor: pointer;
+    
     margin-top: 50px;
 }
 
 .form {
     color: white;
+    
     text-align: center;
 }
 
 iframe {
-    display: block;
+    display: flex;
+    
     margin: auto;
 }
 
@@ -188,6 +202,7 @@ iframe {
         border-radius: 50px;
 
         width: 100%;
+        padding: 10px;
     }
     .navbutton {
         border: none;
@@ -196,17 +211,32 @@ iframe {
 
         width: 100%;
     }
+    .review {
+        margin: 50px;
+        margin-top: 0px;
+    }
     .review-card {
         margin: 10%;
         padding: 50px;
+        
         text-align: left;
     }
-    .review-card-info {
-    }
+
     .review-card img {
         width: 60%;
+        
         float: left;
+        
         margin: 25px;
+    }
+    .game-banner {
+        margin: 50px;
+    }
+
+    .game-banner img {
+        max-width: 100%;
+        
+        border-radius: 50px;
     }
 }
 
@@ -233,9 +263,13 @@ iframe {
         padding: 0px;
         margin: 20px;
     }
+    .review {
+        margin: 0px;
+    }
     .review-card {
         text-align: center;
         align-content: center;
+        padding: 0px;
     }
     .review-card-info {
     }
@@ -247,7 +281,12 @@ iframe {
 
         float: none;
     }
-    h3 {
-        font-size: xx-large;
+    .game-banner {
+        margin: 50px;
+    }
+
+    .game-banner img {
+        max-width: 800px;
+        border-radius: 50px;
     }
 }
