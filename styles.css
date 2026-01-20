@@ -200,14 +200,6 @@ h4 {
     margin: 10px;
 }
 
-@media (max-width: 675px) {
-    #comment {
-        padding: auto;
-        width: 240px;
-    }
-
-}
-
 /* tablet and up */
 @media (min-width: 830px) {
     .navbar {
